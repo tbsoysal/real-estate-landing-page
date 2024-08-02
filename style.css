@@ -15,8 +15,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 20px 32px;
-    overflow-x: hidden;
-    overflow-y: visible;
+    overflow: hidden;
     position: relative;
 }
 
@@ -48,13 +47,11 @@ body {
 
 .nav__mobile-menu.active {
     right: 0;
-
 }
 
 .nav__mobile-menu ul {
     list-style: none;
-    height: 100vh;
-    padding-top: 50%;
+    padding-top: 30%;
 }
 
 .nav__mobile-menu ul li a {
@@ -69,6 +66,33 @@ body {
 
 .nav__hamburger i{
     font-size: 22px;
+}
+
+.nav__mobile-menu-buttons {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px;
+    gap: 20px;
+}
+
+.nav__mobile-menu-buttons button {
+    padding: 15px 20px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.loginBtn {
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid #E0DEF7;
+    border-radius: 5px;
+}
+
+.signupBtn {
+    background-color: #7065F0;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
 }
 
 .nav__closemenu {
