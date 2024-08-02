@@ -8,6 +8,7 @@
 
 body {
     min-height: 100vh;
+    font-family: "Plus Jakarta Sans", sans-serif;;
 }
 
 .nav {
@@ -26,6 +27,7 @@ body {
    font-family: "Plus Jakarta Sans", sans-serif;
    font-optical-sizing: auto;
    font-weight: bold;
+   margin-right: 50px;
 }
 
 .nav__logo img {
@@ -64,7 +66,7 @@ body {
     font-size: 20px;
 }
 
-.nav__hamburger i{
+.nav__mobile-menu .nav__hamburger i{
     font-size: 22px;
 }
 
@@ -82,13 +84,13 @@ body {
     font-size: 18px;
 }
 
-.loginBtn {
+.nav__mobile-menu-buttons .loginBtn {
     background-color: rgba(255, 255, 255, 0);
     border: 2px solid #E0DEF7;
     border-radius: 5px;
 }
 
-.signupBtn {
+.nav__mobile-menu-buttons .signupBtn {
     background-color: #7065F0;
     color: #fff;
     border: none;
@@ -108,12 +110,83 @@ body {
     padding: 20px 30px;
 }
 
-@media screen and (width > 650px) {
+/* Desktop Nav */
+
+.nav__desktop-menu {
+    display: none;
+    align-items: center;
+}
+
+.nav__desktop-menu ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav__desktop-menu a {
+    padding: 20px 30px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #000929;
+    transition: all 0.2s ease;
+    font-weight: 600;
+}
+
+.nav__desktop-menu a:hover {
+    background-color: rgba(0, 0, 0, 0.027);
+}
+
+.nav__desktop-menu-buttons {
+    display: none;
+}
+
+
+.nav__desktop-menu-buttons button {
+    padding: 12px 20px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.loginBtn {
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 5px;
+    border: 2px solid #E0DEF7;
+} 
+
+.loginBtn:hover {
+    background-color: rgba(0, 0, 0, 0.027);
+}
+
+.signupBtn {
+    background-color: #7065F0;
+    color: #fff;
+    border: 2px solid #7065F0;
+    border-radius: 5px;
+}
+
+.signupBtn:hover {
+    background-color: #fff;
+    color: #7065F0;
+}
+
+
+
+@media screen and (width > 1024px) {
     .nav__mobile-menu {
         display: none;
     }
 
     .nav__hamburger {
         display: none;
+    }
+
+    .nav__desktop-menu {
+        display: flex;
+    }
+
+    .nav__desktop-menu-buttons {
+        display: block;
     }
 }
