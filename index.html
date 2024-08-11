@@ -13,57 +13,40 @@
   </head>
   <body>
     <!--Navigation Bar-->
-    <div class="nav">
+    <nav>
       <div class="nav__logo">
-        <img src="./assets/logo.png" alt="logo" />
-        <span>Estatery</span>
-      </div>
-      <nav class="nav__desktop-menu">
-        <ul>
-          <li><a href="#">Rent</a></li>
-          <li><a href="#">Buy</a></li>
-          <li><a href="#">Sell</a></li>
-          <li>
-            <a href="#"
-              >Manage Property <i class="fa-solid fa-angle-down"></i
-            ></a>
-          </li>
-          <li>
-            <a href="#">Resources <i class="fa-solid fa-angle-down"></i></a>
-          </li>
-        </ul>
-      </nav>
-      <div class="nav__desktop-menu-buttons">
-        <button class="loginBtn">Login</button>
-        <button class="signupBtn">Sign up</button>
+        <img src="assets/logo.svg" alt="logo" />
+        Estatery
       </div>
 
-      <nav class="nav__mobile-menu">
-        <div class="nav__closemenu">
-          <a><i class="fa-solid fa-xmark"></i></a>
-        </div>
-        <ul>
-          <li><a href="#">Rent</a></li>
-          <li><a href="#">Buy</a></li>
-          <li><a href="#">Sell</a></li>
-          <li>
-            <a href="#"
-              >Manage Property <i class="fa-solid fa-angle-down"></i
-            ></a>
-          </li>
-          <li>
-            <a href="#">Resources <i class="fa-solid fa-angle-down"></i></a>
-          </li>
-        </ul>
-        <div class="nav__mobile-menu-buttons">
-          <button class="loginBtn">Login</button>
-          <button class="signupBtn">Sign up</button>
-        </div>
-      </nav>
-      <div class="nav__hamburger">
-        <a><i class="fa-solid fa-bars fa-lg"></i></a>
+      <ul class="nav__menu">
+        <li>
+          <a href="/">Rent</a>
+        </li>
+        <li>
+          <a href="/">Buy</a>
+        </li>
+        <li>
+          <a href="/">Sell</a>
+        </li>
+        <li>
+          <a href="/">Manage Property <i class="fa-solid fa-caret-down"></i></a>
+        </li>
+        <li>
+          <a href="/">Resources <i class="fa-solid fa-caret-down"></i></a>
+        </li>
+      </ul>
+
+      <div class="nav__buttons">
+        <button class="login">Login</button>
+        <button class="signup">Sign up</button>
       </div>
-    </div>
+
+      <div class="nav__toggleBtn">
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
 
     <!--Navigation Bar End-->
     <script src="script.js"></script>
