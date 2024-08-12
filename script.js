@@ -24,6 +24,12 @@ navToggleBtn.addEventListener('click', () => {
   }
 })
 
+document.addEventListener('click', (e) => {
+  if(!navMenu.contains(e.target) && !navToggleBtn.contains(e.target)){
+    hideMobileMenu();
+  }
+})
+
 selectMenu.forEach(element => {
   element.addEventListener('click', (e)=> {
     //if clicked one of them remove the active class from all of them first
