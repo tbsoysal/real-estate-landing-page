@@ -53,7 +53,7 @@ nav {
 }
 
 .nav__menu a:hover {
-  background-color: skyblue;
+  background-color: var(--primary-color);
   color: white;
 }
 
@@ -109,7 +109,7 @@ nav {
     font-size: 1.2rem;
     transform: translateX(100%);
     transition: all 0.5s ease-out;
-    z-index: 20;
+    z-index: 10;
   }
 
   .nav__menu a {
@@ -123,10 +123,10 @@ nav {
   .nav__buttons {
     position: fixed;
     inset: 80% 1.5rem 1.5rem calc(30% + 2rem);
-    z-index: 20;
     flex-direction: column;
     transform: translateX(150%);
     transition: all 0.5s ease-out;
+    z-index: 10;
   }
 
   .nav__buttons button {
@@ -140,7 +140,7 @@ nav {
     width: 25px;
     height: 30px;
     position: relative;
-    z-index: 30;
+    z-index: 10;
   }
 
   .nav__toggleBtn span {
@@ -175,6 +175,8 @@ nav {
 .hero {
   padding: 3rem 2rem;
   background-color: #F7F7FD;
+  position: relative;
+  min-height: 100vh;
 }
 
 .hero h1 {
@@ -204,7 +206,7 @@ nav {
 
 .hero__select-menu li {
   flex: 1;
-  z-index: 10;
+  z-index: 5;
 }
 
 .hero__select-menu a {
@@ -217,6 +219,7 @@ nav {
   padding: 1rem 1.5rem;
   border-bottom: 2px solid rgba(0, 0, 0, 0.2);
   transition: color 0.3s ease;
+  cursor: pointer;
 }
 
 .hero__select-menu a.active {
@@ -227,6 +230,7 @@ nav {
 .hero__menu-tabs .rentTab {
   margin-bottom: 30px;
   position: relative;
+  z-index: 4;
 }
 
 .hero__menu-tabs .rentTab input {
@@ -264,6 +268,7 @@ nav {
   display: flex;
   width: 100%;
   margin-top: 70px;
+  margin-bottom: 70px;
 }
 
 .hero__statics div {
@@ -283,4 +288,145 @@ nav {
   margin-bottom: 0;
   font-size: 16px;
   color: gray;
+}
+
+.hero__desktop-image {
+  display: none;
+}
+
+@media (min-width: 900px) {
+  .hero {
+    padding-left: 5rem;
+  }
+  .hero h1 {
+    font-size: 65px;
+    margin-bottom: 50px;
+  }
+
+  .hero p {
+    margin-bottom: 50px;
+  }
+  .hero h1, .hero p {
+    text-align: start;
+    max-width: 50%;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .hero__select-menu {
+    max-width: 30%;
+  }
+  .hero__menu-tabs {
+    max-width: 60%;
+  }
+
+  .hero__statics {
+    max-width: 30%;
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+
+  .hero__statics p {
+    margin-bottom: 0;
+  }
+
+  .hero__desktop-image {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100vh;
+    background-image: url('assets/map.png');
+  }
+
+  .home-card1 {
+    position: absolute;
+    top:20px;
+    left: 30px;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+
+  .home-card2 {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    width: 200px;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+
+  .home-card img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+
+  .home-card .content {
+    max-width: 90%;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+  }
+
+  .home-card .price {
+    font-size: 24px;
+    color: var(--primary-color);
+  }
+
+  .home-card2 .price {
+    font-size: 20px;
+  }
+
+  .home-card .price span {
+    font-size: 16px;
+    color: gray;
+  }
+
+  .home-card .name {
+    font-size: 24px;
+  }
+
+  .home-card2 .name {
+    font-size: 18px;
+  }
+
+  .home-card .address {
+    font-size: 16px;
+    color: gray;
+    max-width: 100% !important;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+
+  .home-card2 .address {
+    font-size: 14px;
+  }
+
+  .home-card ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .home-card ul li {
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  .home-card ul img {
+    width: 20px;
+    margin-right: 5px;
+  }
+
+  .home-card2 ul li {
+    font-size: 14px;
+  }
 }
