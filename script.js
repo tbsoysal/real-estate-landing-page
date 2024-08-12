@@ -1,6 +1,7 @@
 const navMenu = document.querySelector('.nav__menu');
 const navButtons = document.querySelector('.nav__buttons');
 const navToggleBtn = document.querySelector('.nav__toggleBtn');
+const selectMenu = document.querySelectorAll('.hero__select-menu a');
 
 function showMobileMenu() {
   navMenu.classList.add('show');
@@ -22,3 +23,17 @@ navToggleBtn.addEventListener('click', () => {
     showMobileMenu();
   }
 })
+
+selectMenu.forEach(element => {
+  element.addEventListener('click', (e)=> {
+    //if clicked one of them remove the active class from all of them first
+    if(element.contains(e.target)){
+      selectMenu.forEach(element => {
+        element.classList.remove('active');
+      })
+
+      //then add active class to element that has been clicked
+      element.classList.add('active');
+    }
+  })
+});
