@@ -1,5 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 
+@keyframes slideFromRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
 :root {
   --text-color: #100a55;
   --primary-color: #7065F0;
@@ -180,7 +197,7 @@ nav {
 }
 
 .hero h1 {
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 800;
   text-align: center;
   margin-bottom: 30px;
@@ -202,11 +219,13 @@ nav {
   margin-bottom: -4px;
   border-radius: 10px;
   background-color: #fff;
+  animation: slideFromLeft 1s ease forwards;
+  position: relative;
+  z-index: 5;
 }
 
 .hero__select-menu li {
   flex: 1;
-  z-index: 5;
 }
 
 .hero__select-menu a {
@@ -214,7 +233,7 @@ nav {
   text-decoration: none;
   color: black;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
   padding: 1rem 1.5rem;
   border-bottom: 2px solid rgba(0, 0, 0, 0.2);
@@ -230,7 +249,8 @@ nav {
 .hero__menu-tabs .rentTab {
   margin-bottom: 30px;
   position: relative;
-  z-index: 4;
+  animation: slideFromLeft 1s ease forwards;
+  z-index: 3;
 }
 
 .hero__menu-tabs .rentTab input {
@@ -299,7 +319,7 @@ nav {
     padding-left: 5rem;
   }
   .hero h1 {
-    font-size: 65px;
+    font-size: 60px;
     margin-bottom: 50px;
   }
 
@@ -307,8 +327,10 @@ nav {
     margin-bottom: 50px;
   }
   .hero h1, .hero p {
+    position: relative;
     text-align: start;
     max-width: 50%;
+    z-index: 4;
   }
   
   .container {
@@ -340,6 +362,7 @@ nav {
     width: 50%;
     height: 100vh;
     background-image: url('assets/map.png');
+    z-index: 2;
   }
 
   .home-card1 {
@@ -349,7 +372,9 @@ nav {
     width: 300px;
     background-color: #fff;
     border-radius: 10px;
+    animation: slideFromLeft 0.5s ease forwards;
   }
+
 
   .home-card2 {
     position: absolute;
@@ -358,6 +383,7 @@ nav {
     width: 200px;
     background-color: #fff;
     border-radius: 10px;
+    animation: slideFromRight 0.5s ease forwards;
   }
 
   .home-card img {
