@@ -2,6 +2,7 @@ const navMenu = document.querySelector(".nav__menu");
 const navButtons = document.querySelector(".nav__buttons");
 const navToggleBtn = document.querySelector(".nav__toggleBtn");
 const selectMenu = document.querySelectorAll(".hero__select-menu a");
+const selectButtons = document.querySelectorAll(".selectcontainer button")
 
 function showMobileMenu() {
   navMenu.classList.add("show");
@@ -43,3 +44,11 @@ selectMenu.forEach((element) => {
     }
   });
 });
+
+selectButtons.forEach((btn)=> {
+  btn.addEventListener("click", (e) => {
+    selectButtons[0].classList.remove('active');
+    selectButtons[1].classList.remove('active');
+    btn.classList.add('active');
+  })
+})

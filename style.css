@@ -456,3 +456,116 @@ nav {
     font-size: 14px;
   }
 }
+
+
+.feature-1__imageContainer {
+  background-color: #DCDAF6;
+  position: relative;
+  margin: 5rem 1rem;
+  border-radius: 15px;
+}
+
+.feature-1__imageContainer img {
+  display: block;
+  width: 100%;
+}
+
+.feature-1__imageContainer .label {
+  position: absolute;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  background-color: white;
+  color: var(--text-color);
+  padding: 15px 20px;
+  font-size: 14px;
+  border-radius: 10px;
+  border: 2px solid rgba(0,0,0,0.3);
+}
+
+.feature-1__imageContainer .label1{
+  top: 5%;
+  left: -3%;
+}
+
+.feature-1__imageContainer .label2 {
+  width: 80%;
+  bottom: -5%;
+  left: 50%;
+  transform: translate(-50%);
+  gap: 0;
+  padding: 15px;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+}
+
+.feature-1__imageContainer .label img {
+  width: 50px;
+}
+
+.feature-1__imageContainer .label2 img {
+  position: absolute;
+  display: block;
+  top: -25px;
+  right: 15px;
+}
+
+.feature-1__contentContainer {
+  margin: 0 1rem;
+  text-align: center;
+}
+
+.feature-1__contentContainer .selectcontainer {
+  display: flex;
+  padding: 5px;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #efeffb66;
+  margin-bottom: 2rem;
+}
+
+.feature-1__contentContainer .selectcontainer button {
+  flex: 1;
+  padding: 15px 10px;
+  font-family: inherit;
+  border: none;
+  background-color: rgba(0,0,0,0);
+  font-weight: 600;
+  color: #6C727F;
+  font-size: 20px;
+  border: 2px solid rgba(0, 0, 0, 0.0);
+  transition: all 0.3s ease;
+}
+
+.feature-1__contentContainer .selectcontainer button.active {
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  background-color: white;
+  color: var(--primary-color);
+  font-weight: 800;
+  border-radius: 8px;
+}
+
+.feature-1__contentContainer h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 1.5rem;
+}
+
+.feature-1__contentContainer p {
+  color: #6C727F;
+  font-size: 16px;
+  margin-bottom: 1.5rem;
+  line-height: 1.5rem;
+}
+
+.feature-1__contentContainer .seemoreBtn {
+  width: 100%;
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 16px;
+  font-family: inherit;
+  border: none;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 4rem;
+}
