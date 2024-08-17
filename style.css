@@ -19,7 +19,7 @@
 
 :root {
   --text-color: #100a55;
-  --primary-color: #7065F0;
+  --primary-color: #7065f0;
 }
 
 * {
@@ -179,7 +179,7 @@ nav {
     transform: rotate(45deg);
     background-color: white;
   }
-  .nav__toggleBtn.close span:nth-child(2){
+  .nav__toggleBtn.close span:nth-child(2) {
     transform: rotate(-45deg);
     background-color: white;
   }
@@ -191,7 +191,7 @@ nav {
 
 .hero {
   padding: 3rem 2rem;
-  background-color: #F7F7FD;
+  background-color: #f7f7fd;
   position: relative;
   min-height: 100vh;
 }
@@ -268,16 +268,16 @@ nav {
 }
 
 .hero__menu-tabs .rentTab::after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
-  top: 20px; 
+  top: 20px;
   right: 15px;
   width: 50px;
   height: 50px;
   border-radius: 10px;
-  background-color: #7065F0;
-  background-image: url('assets/search-icon.svg');
+  background-color: #7065f0;
+  background-image: url("assets/search-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 25px;
@@ -288,13 +288,13 @@ nav {
   display: flex;
   width: 100%;
   margin-top: 70px;
-  margin-bottom: 70px;
+  margin-bottom: 0px;
 }
 
 .hero__statics div {
   flex: 1;
   padding-left: 25px;
-  border-left: 3px solid rgba(0, 0, 0, 0.1)
+  border-left: 3px solid rgba(0, 0, 0, 0.1);
 }
 
 .hero__statics .highlight {
@@ -326,13 +326,14 @@ nav {
   .hero p {
     margin-bottom: 50px;
   }
-  .hero h1, .hero p {
+  .hero h1,
+  .hero p {
     position: relative;
     text-align: start;
     max-width: 50%;
     z-index: 4;
   }
-  
+
   .container {
     display: flex;
     flex-direction: column-reverse;
@@ -361,20 +362,19 @@ nav {
     right: 0;
     width: 50%;
     height: 100vh;
-    background-image: url('assets/map.png');
+    background-image: url("assets/map.png");
     z-index: 2;
   }
 
   .home-card1 {
     position: absolute;
-    top:20px;
+    top: 20px;
     left: 30px;
     width: 300px;
     background-color: #fff;
     border-radius: 10px;
     animation: slideFromLeft 0.5s ease forwards;
   }
-
 
   .home-card2 {
     position: absolute;
@@ -440,7 +440,7 @@ nav {
     display: flex;
     align-items: center;
   }
-  
+
   .home-card ul li {
     margin-right: 20px;
     display: flex;
