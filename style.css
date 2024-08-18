@@ -34,6 +34,9 @@ body {
   color: var(--text-color);
 }
 
+button {
+  cursor: pointer;
+}
 /* NavBar Section Start */
 
 nav {
@@ -566,7 +569,7 @@ nav {
   border: none;
   padding: 15px;
   border-radius: 8px;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
 }
 
 @media (min-width: 1024px){
@@ -604,18 +607,138 @@ nav {
   }
 
   .feature-1__contentContainer .selectcontainer {
-    width: 70%;
+    width: 60%;
   }
 
   .feature-1__contentContainer h2 {
-    font-size: 50px;
+    font-size: 40px;
   }
 
   .feature-1__contentContainer p {
-    font-size: 18px;
+    font-size: 16px;
+  }
+
+  .feature-1__contentContainer .selectcontainer button {
+    font-size: 16px;
   }
 
   .feature-1__contentContainer .seemoreBtn {
     width: auto;
+  }
+}
+
+/* Feature 2 Section */
+.feature2 {
+  margin: 5rem 1rem;
+  border: 1px solid #E0DEF7;
+  background-color: #F7F7FD;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  font-size: 16px;
+}
+
+.f2-contentContainer {
+  padding: 2rem 1rem 0 2rem;
+}
+
+.f2-contentContainer h2 {
+  font-size: 2em;
+  font-weight: 800;
+  margin-bottom: 0.7em;
+}
+
+.f2-contentContainer>p {
+  font-size: 1em;
+  font-weight: 500;
+  color: #6C727F;
+  margin-bottom: 1.4em;
+}
+
+.f2-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.f2-list li {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.f2-list li h4 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.f2-list li p {
+  font-size: 0.75rem;
+}
+
+.f2-imgContainer {
+  max-height: 300px;
+}
+
+@media (min-width: 1200px){
+  .feature2 {
+    flex-direction: row;
+    align-items: center;
+    margin-inline: 5rem;
+  }
+
+  .f2-contentContainer {
+    padding: 4rem 4rem 5rem 4rem;
+    width: 50%;
+  }
+
+  .f2-contentContainer h2 {
+    font-size: 40px;
+    width: 75%;
+  }
+
+  .f2-contentContainer>p {
+    font-size: 16px;
+    width: 50%;
+    margin-bottom: 3rem;
+  }
+
+  .f2-list {
+    flex-direction: row;
+    gap: 16px;
+    justify-content: space-between;
+  }
+
+  .f2-list li {
+    flex-direction: column;
+  }
+
+  .f2-list li img {
+    width: 64px;
+  }
+
+  .f2-list li div {
+    text-align: center;
+    color: #000929;
+  }
+
+  .f2-list li h4 {
+    font-size: 1.5rem;
+  }
+
+  .f2-list li p {
+    font-size: 0.75rem;
+  }
+
+  .f2-imgContainer {
+    max-height: 100%;
+    width: 50%;
+  }
+
+  .f2-imgContainer img {
+    height: 100%;
+    width: 100%;
   }
 }
