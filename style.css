@@ -569,3 +569,54 @@ nav {
   border-radius: 8px;
   margin-bottom: 4rem;
 }
+
+@media (min-width: 1024px){
+  .feature-1 {
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    padding: 5rem;
+    margin-inline: auto;
+  }
+  
+  .feature-1__imageContainer {
+    width: 50%;
+    margin: 0;
+  }
+
+  .feature-1__imageContainer img {
+    height: 600px;
+  }
+
+  .feature-1__imageContainer .label1 {
+    height: 90px;
+  }
+
+  .feature-1__imageContainer .label2 img {
+    top: -300px;
+  }
+  
+  .feature-1__contentContainer {
+    width: 50%;
+  }
+
+  .feature-1__contentContainer {
+    text-align: start;
+  }
+
+  .feature-1__contentContainer .selectcontainer {
+    width: 70%;
+  }
+
+  .feature-1__contentContainer h2 {
+    font-size: 50px;
+  }
+
+  .feature-1__contentContainer p {
+    font-size: 18px;
+  }
+
+  .feature-1__contentContainer .seemoreBtn {
+    width: auto;
+  }
+}
