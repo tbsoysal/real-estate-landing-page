@@ -742,3 +742,53 @@ nav {
     width: 100%;
   }
 }
+
+/* Feature 3 Section */
+.feature3 {
+  margin: 5rem 1rem;
+}
+
+.f3-heading{
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.f3-heading h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #000929;
+  margin-bottom: 1rem;
+}
+
+.f3-heading p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #000929;
+}
+
+.property-list {
+  display: flex;
+  list-style-type: none;
+  overflow: scroll;
+  gap: 1rem;
+}
+
+.property {
+  flex-shrink: 0;
+}
+
+.property>img {
+  width: 100%;
+}
+
+.property .popularLabel {
+  display: inline-block;
+  gap: 5px;
+  background-color: var(--primary-color);
+  padding: 10px;
+  font-weight: 600;
+  font-size: 12px;
+  color: white;
+  border-radius: 5px;
+  position: relative;
+}
