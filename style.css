@@ -775,6 +775,7 @@ nav {
   padding-bottom: 3rem;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  margin-bottom: 2rem;
 }
 
 .property-list::-webkit-scrollbar {
@@ -787,9 +788,6 @@ nav {
   background-color: white;
   border: 1.5px solid #F0EFFB;
   border-radius: 10px;
-}
-
-.property:nth-child(1){
   margin-left: 8px;
 }
 
@@ -890,4 +888,46 @@ nav {
   border: none;
   border-radius: 8px;
   font-weight: 600;
+}
+
+@media (min-width: 1200px){
+  .feature3 {
+    padding: 0 5rem;
+    position: relative;
+  }
+
+  .feature3 .f3-heading {
+    text-align: start;
+  }
+
+  .feature3 .f3-heading h2 {
+    font-size: 40px;
+  }
+
+  .feature3 .property-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 0 10px;
+    align-items: center;
+  }
+
+  .feature3 .property-list .property {
+    width: 100%;
+  }
+
+  .feature3 .property-list .property img {
+    height: auto;
+  }
+  
+  .feature3 .detailsContainer ul {
+    justify-content: space-around;
+  }
+
+  .feature3 .moreBtn {
+    width: 250px;
+    position: absolute;
+    top: 20px;
+    right: 80px;
+  }
 }
