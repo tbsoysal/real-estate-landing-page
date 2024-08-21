@@ -2,7 +2,8 @@ const navMenu = document.querySelector(".nav__menu");
 const navButtons = document.querySelector(".nav__buttons");
 const navToggleBtn = document.querySelector(".nav__toggleBtn");
 const selectMenu = document.querySelectorAll(".hero__select-menu a");
-const selectButtons = document.querySelectorAll(".selectcontainer button")
+const selectButtons = document.querySelectorAll(".selectcontainer button");
+const testimonialProfiles = document.querySelectorAll(".testimonials ul li");
 
 function showMobileMenu() {
   navMenu.classList.add("show");
@@ -50,5 +51,14 @@ selectButtons.forEach((btn)=> {
     selectButtons[0].classList.remove('active');
     selectButtons[1].classList.remove('active');
     btn.classList.add('active');
+  })
+})
+
+testimonialProfiles.forEach((pp)=> {
+  pp.addEventListener("click", (e) => {
+    testimonialProfiles[0].classList.remove('active');
+    testimonialProfiles[1].classList.remove('active');
+    testimonialProfiles[2].classList.remove('active');
+    pp.classList.add('active');
   })
 })
