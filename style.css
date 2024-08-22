@@ -954,6 +954,7 @@ nav {
 }
 
 .testimonials .testimonial {
+  display: none;
   font-size: 20px;
   font-weight: 600;
   color: #000929;
@@ -961,6 +962,11 @@ nav {
   width: 70%;
   margin-inline: auto;
   margin-bottom: 2.5rem;
+  transition: all 0.4s ease;
+}
+
+.testimonials .testimonial.show {
+  display: block;
 }
 
 .testimonials .testimonial .author {

@@ -4,6 +4,7 @@ const navToggleBtn = document.querySelector(".nav__toggleBtn");
 const selectMenu = document.querySelectorAll(".hero__select-menu a");
 const selectButtons = document.querySelectorAll(".selectcontainer button");
 const testimonialProfiles = document.querySelectorAll(".testimonials ul li");
+const testimonials = document.querySelectorAll(".testimonial");
 
 function showMobileMenu() {
   navMenu.classList.add("show");
@@ -54,11 +55,12 @@ selectButtons.forEach((btn)=> {
   })
 })
 
-testimonialProfiles.forEach((pp)=> {
-  pp.addEventListener("click", (e) => {
-    testimonialProfiles[0].classList.remove('active');
-    testimonialProfiles[1].classList.remove('active');
-    testimonialProfiles[2].classList.remove('active');
+testimonialProfiles.forEach((pp, index)=> {
+  pp.addEventListener("click", () => {
+    testimonialProfiles.forEach((photo)=>photo.classList.remove('active'));
+    testimonials.forEach((test)=>test.classList.remove('show'));
+
     pp.classList.add('active');
+    testimonials[index].classList.add('show');
   })
 })
