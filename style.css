@@ -1025,3 +1025,101 @@ nav {
     max-width: 25%;
   }
 }
+
+/* email section start */
+.emailSection {
+  padding: 3rem 1.5rem;
+  background-color: #100A55;
+  color: white;
+  text-align: center;
+}
+
+.emailSection h3 {
+  color: #7065F0;
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.emailSection h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.emailSection p {
+  font-size: 1rem;
+  line-height: 160%;
+  color: #D3D5DA;
+  margin-bottom: 3rem;
+}
+
+.emailSection form input[type="email"] {
+  width: 100%;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 15px 1.5rem;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 1rem;
+}
+
+.emailSection form input[type="submit"] {
+  width: 100%;
+  padding: 12px 0;
+  background-color: var(--primary-color);
+  border: none;
+  color: white;
+  font-size: 1rem;
+  font-family: inherit;
+  font-weight: 600;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.emailSection form input[type="submit"]:hover {
+  background-color: white;
+  color: var(--primary-color);
+}
+
+.emailSection .lastP {
+  font-size: 14px;
+  line-height: 140%;
+  color: #D3D5DA;
+  margin-bottom: 0;
+}
+
+.emailSection .lastP span {
+  color: white;
+}
+
+@media (min-width: 1200px) {
+  .emailSection {
+    padding: 60px 0;
+  }
+  
+  .emailSection h2 {
+    font-size: 40px;
+  }
+
+  .emailSection form {
+    max-width: 550px;
+    margin-inline: auto;
+    position: relative;
+    margin-bottom: 1.5rem;
+  }
+
+  .emailSection form input[type="email"] {
+    padding: 27px 174px 27px 24px;
+    font-size: 18px;
+    margin-bottom: 0;
+    outline: none;
+  }
+
+  .emailSection form input[type="submit"] {
+    width: 137px;
+    height: 48px;
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    transform: translate(0, -50%);
+  }
+}
