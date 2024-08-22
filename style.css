@@ -682,7 +682,7 @@ nav {
   max-height: 300px;
 }
 
-@media (min-width: 1200px){
+@media (min-width: 1024px){
   .feature2 {
     flex-direction: row;
     align-items: center;
@@ -889,7 +889,7 @@ nav {
   font-weight: 600;
 }
 
-@media (min-width: 1200px){
+@media (min-width: 1024px){
   .feature3 {
     padding: 0 5rem;
     position: relative;
@@ -1015,8 +1015,7 @@ nav {
 .testimonials ul li img {
   width: 100%;
 }
-
-@media (min-width: 1200px) {
+@media (min-width: 1024px) { 
   .testimonials h2 {
     font-size: 40px;
   }
@@ -1091,7 +1090,7 @@ nav {
   color: white;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   .emailSection {
     padding: 60px 0;
   }
@@ -1122,4 +1121,68 @@ nav {
     right: 16px;
     transform: translate(0, -50%);
   }
+}
+
+/* Footer section start */
+footer {
+  padding: 3rem 1.5rem;
+}
+
+footer .logo {
+  display: flex;
+  gap: 4px;
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin-bottom: 3rem;
+}
+
+footer>ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1rem;
+  row-gap: 2rem;
+}
+
+footer .linkgroup h3 {
+  font-size: 14px;
+  font-weight: 900;
+  color: #000929;
+  margin-bottom: 1rem;
+}
+
+footer .linkgroup ul {
+  list-style-type: none;
+  color: rgba(0, 9, 41, 0.8);
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footerLinks {
+  padding: 2rem 1.5rem 3rem 1.5rem;
+  text-align: center;
+  color: rgba(0, 9, 41, 0.5);
+  font-size: 14px;
+  font-weight: 600;
+  border-top: 2px solid rgba(0,0,0,0.1);
+}
+
+.footerLinks p {
+  margin-bottom: 1.5rem;
+}
+
+.footerLinks ul {
+  max-width: 50%;
+  margin-inline: auto;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footerLinks ul img {
+  width: 100%;
+  color: rgba(0,0,0,0.1);
 }
