@@ -363,7 +363,7 @@ nav {
     top: 0;
     right: 0;
     width: 50%;
-    height: 100vh;
+    height: 100%;
     background-image: url("assets/map.png");
     z-index: 2;
   }
@@ -1092,7 +1092,7 @@ nav {
 
 @media (min-width: 1024px) {
   .emailSection {
-    padding: 60px 0;
+    padding: 80px 0;
   }
   
   .emailSection h2 {
@@ -1155,9 +1155,20 @@ footer .linkgroup ul {
   list-style-type: none;
   color: rgba(0, 9, 41, 0.8);
   font-size: 14px;
+  font-weight: 500;
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+
+footer a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+
+footer a:hover {
+  color: var(--primary-color);
 }
 
 .footerLinks {
@@ -1182,7 +1193,40 @@ footer .linkgroup ul {
   align-items: center;
 }
 
-.footerLinks ul img {
-  width: 100%;
-  color: rgba(0,0,0,0.1);
+
+@media (min-width: 1024px) {
+  footer {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding: 80px 0 3rem 0;
+    max-width: 70%;
+    margin-inline: auto;
+  }
+
+  footer ul {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 88px;
+  }
+
+  .footerLinks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline:5rem;
+  }
+
+  .footerLinks p {
+    margin: 0;
+  }
+
+  .footerLinks ul{
+    max-width: auto;
+    margin: 0;
+  }
+
+  .footerLinks ul a {
+    padding: 15px 20px;
+  }
+
 }
